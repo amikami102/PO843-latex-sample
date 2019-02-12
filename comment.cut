@@ -1,0 +1,14 @@
+Use \verb|\printbibliography| command to insert a bibliography. In the style file, I have the following lines specifying that I want the \texttt{biblatex} package to write my bibliography in author-year format with the  \texttt{biber} engine as my \texttt{.bib} processor.
+\begin{verbatim}
+\usepackage[backend=biber, style=authoryear, citestyle=authoryear]{biblatex}
+\addbibresource{sample}
+\end{verbatim}
+The \texttt{.bib} file stores all my bibliography entries. You can find a \texttt{bibtex} formatted citation by googling the work you want to cite on {Google Scholar}\href{https://scholar.google.com/}. For example, the entry for \cite{ross} looks like this:
+\begin{verbatim}
+@book{ross,
+   title={A first course in probability},
+   author={Ross, Sheldon},
+   year={2014},
+   publisher={Pearson}
+}
+\end{verbatim}

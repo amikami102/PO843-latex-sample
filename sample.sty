@@ -1,0 +1,82 @@
+\usepackage[margin=0.75in]{geometry} % sets page margin to 1in
+\usepackage{amsthm, amsmath, amssymb, amsfonts} % necessary for all things math
+\usepackage{eucal} % uses eucal when \mathcal 
+\usepackage[none]{hyphenat} % stop hyphenation
+\usepackage{setspace} % for line spacing 
+%\setlength{\parindent}{0in} % uncomment to remove indent at start of paragraphs
+\usepackage{xspace} % add white space with \xspace
+\usepackage{xcolor}
+
+
+
+%\usepackage{latex-tools} % tools bundle % not working 
+\usepackage{graphics} % should be in "tools" 
+\DeclareGraphicsExtensions{.pdf,.jpg,.png} % omit extensions
+\usepackage{multicol} % should be in "tools" 
+\usepackage{longtable} % should be in "tools"
+\usepackage{layout} % should be in "tools"
+\usepackage{verbatim} % should be in "tools"
+\usepackage{tabularx} % should be in "tools"
+\usepackage{multirow} % for multiple subrows in tables
+\usepackage{float} % \FloatBarrier
+\usepackage{pdflscape} % landsccape orientation for page layout
+\usepackage{caption} % caption customization
+\usepackage[inline]{enumitem} % in-line enumeration
+\setlist{topsep=0pt, itemsep = 0pt, leftmargin=50pt}
+\usepackage[titletoc, toc, title]{appendix} % add appendix 
+
+\usepackage{hyperref} % hyper reference
+\hypersetup{
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    colorlinks = true
+}
+
+\usepackage[symbol]{footmisc} % footnotes with symbols
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% BIBLIOGRAPHY
+\usepackage[backend=biber, style=authoryear, citestyle=authoryear]{biblatex}
+\addbibresource{sample.bib}
+
+
+% FONTS
+\usepackage[T1]{fontenc} % always use this no matter what
+% uncomment any one of these to see what it does to your font!
+%\usepackage{pxfonts}
+%\usepackage{cmbright}
+%\usepackage{txfonts}
+%\usepackage[adobe-utopia]{mathdesign}
+%\usepackage{kpfonts}
+%\usepackage{lmodern}
+%\usepackage{newtxtext,newtxmath}
+
+
+% commands for \latex and \knitr
+\newcommand{\latex}{\LaTeX\xspace}
+\newcommand{\knitr}{\textbf{knitr}\xspace}
+\newcommand{\stargazer}{\textbf{stargazer}\xspace}
+
+
+% commands for expectation, variance, covariance, and correlation
+\newcommand{\E}{\mathrm{E}\,}
+\newcommand{\Var}{\mathrm{Var}\,}
+\newcommand{\Cov}{\mathrm{Cov}\,}
+\newcommand{\Corr}{\mathrm{Corr}\,}
+\newcommand{\Deg}{\mathrm{Deg}\,}
+
+% command for indicator function
+
+
+
+% commands for comments
+\usepackage{comment}
+
+\includecomment{notes}% uncomment this to enable comment, vcvs
+\specialcomment{notes}{\begingroup\color{blue}\singlespacing\noindent}{\endgroup} 
+%\excludecomment{howto} % comment this line to enable comment, vcvs
+
+\includecomment{tex}
+\specialcomment{tex}{\begingroup\color{green}\singlespacing}{\endgroup}
+%\excludecomment{tex}
