@@ -5,7 +5,7 @@
 \usepackage{setspace} % for line spacing 
 %\setlength{\parindent}{0in} % uncomment to remove indent at start of paragraphs
 \usepackage{xspace} % add white space with \xspace
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor} % more colors
 
 
 
@@ -21,20 +21,22 @@
 \usepackage{float} % \FloatBarrier
 \usepackage{pdflscape} % landsccape orientation for page layout
 \usepackage{caption} % caption customization
+
 \usepackage[inline]{enumitem} % in-line enumeration
-\setlist{topsep=0pt, itemsep = 0pt, leftmargin=50pt}
+\setlist{topsep=5pt, itemsep = 0pt, leftmargin=50pt}
+
 \usepackage[titletoc, toc, title]{appendix} % add appendix 
 
 \usepackage{hyperref} % hyper reference
 \hypersetup{
-    linkcolor=blue,
+    linkcolor=BurntOrange,
     filecolor=magenta,      
-    urlcolor=cyan,
+    urlcolor=Cerulean,
     colorlinks = true
 }
 
 \usepackage[symbol]{footmisc} % footnotes with symbols
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\thefootnote}{\normalsize{\fnsymbol{footnote}}}
 
 % BIBLIOGRAPHY
 \usepackage[backend=biber, style=authoryear, citestyle=authoryear]{biblatex}
@@ -75,8 +77,6 @@
 
 \includecomment{notes}% uncomment this to enable comment, vcvs
 \specialcomment{notes}{\begingroup\color{blue}\singlespacing\noindent}{\endgroup} 
-%\excludecomment{howto} % comment this line to enable comment, vcvs
+%\excludecomment{notes} % comment this line to enable comment, vcvs
 
-\includecomment{tex}
-\specialcomment{tex}{\begingroup\color{green}\singlespacing}{\endgroup}
-%\excludecomment{tex}
+
