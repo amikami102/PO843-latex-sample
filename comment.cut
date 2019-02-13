@@ -3,7 +3,7 @@ Use \verb|\printbibliography| command to insert a bibliography. In the style fil
 \usepackage[backend=biber, style=authoryear, citestyle=authoryear]{biblatex}
 \addbibresource{sample}
 \end{verbatim}
-The \texttt{.bib} file stores all my bibliography entries. You can find a \texttt{bibtex} formatted citation by googling the work you want to cite on {Google Scholar}\href{https://scholar.google.com/}. For example, the entry for \cite{ross} looks like this:
+The \texttt{.bib} file stores all my bibliography entries. You can find a \texttt{bibtex} formatted citation by googling the work you want to cite on \href{https://scholar.google.com/}{Google Scholar}. For example, the entry for \cite{ross} looks like this:
 \begin{verbatim}
 @book{ross,
    title={A first course in probability},
