@@ -6,8 +6,9 @@ all:	$(PDF)
 pdf:    clean $(PDFS)
 
 clean:
-	rm -f $(PDFS) *.aux *.log *.run.xml *.bcf *.synctex.gz
+	latexmk -c
 
 %.pdf: %.tex
-	pdflatex $< 
+	rm -f $(PDF);
+	latexmk -pvc -pv -quiet $<
 
