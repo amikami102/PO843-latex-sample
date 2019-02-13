@@ -30,3 +30,4 @@ $ make clean; make pdf
 |-- sample-ta.pdf    
 |-- Makefile
 ```
+https://github.com/amikami102/PO843-latex-sample.git
